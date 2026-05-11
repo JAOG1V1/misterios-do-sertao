@@ -11,6 +11,20 @@
   <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge" alt="Status">
 </p>
 
+<p align="center">
+  <a href="https://jaog1v1.github.io/misterios-do-sertao/">
+    <img src="https://img.shields.io/badge/▶️_JOGAR_AGORA-c9622a?style=for-the-badge&logoColor=white" alt="Jogar agora">
+  </a>
+</p>
+
+---
+
+## 🎮 Jogue online
+
+O projeto está publicado no GitHub Pages! Acesse pelo link:
+
+### 👉 **[https://jaog1v1.github.io/misterios-do-sertao/](https://jaog1v1.github.io/misterios-do-sertao/)** 👈
+
 ---
 
 ## 📖 Sobre o projeto
@@ -42,12 +56,15 @@ Cada decisão influencia o desfecho da história. Existem **dois finais possíve
 
 ## 🚀 Como executar
 
-### Opção 1: Direto no navegador
+### Opção 1: Jogar online (mais fácil!)
+Acesse: **[https://jaog1v1.github.io/misterios-do-sertao/](https://jaog1v1.github.io/misterios-do-sertao/)**
+
+### Opção 2: Baixar e abrir no navegador
 1. Faça o download dos arquivos do repositório (`Code` → `Download ZIP`)
 2. Extraia o arquivo `.zip`
 3. Abra o `index.html` com qualquer navegador (Chrome, Firefox, Edge...)
 
-### Opção 2: Clonando o repositório
+### Opção 3: Clonando o repositório
 ```bash
 git clone https://github.com/JAOG1V1/misterios-do-sertao.git
 cd misterios-do-sertao
@@ -63,6 +80,7 @@ misterios-do-sertao/
 ├── index.html      # Estrutura e conteúdo da aventura
 ├── style.css       # Estilos, cenários e animações
 ├── script.js       # Lógica do jogo e interações
+├── favicon.svg     # Ícone do site (cacto no sol)
 └── README.md       # Este arquivo
 ```
 
@@ -73,6 +91,7 @@ misterios-do-sertao/
 - **HTML5** — estrutura semântica dos capítulos da aventura
 - **CSS3** — visual em estilo cordel, animações e cenários atmosféricos
 - **JavaScript (Vanilla)** — controle de fluxo, escolhas, mensagens aleatórias e lógica do final secreto
+- **SVG** — favicon personalizado com tema do sertão
 - **Google Fonts** — tipografia (`Cinzel Decorative` e `Crimson Pro`)
 
 ---
