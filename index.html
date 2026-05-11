@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misterios do Sertao</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="inventario" id="inventario">
+        <h3 class="inventario-titulo">Diario de bordo</h3>
+        <ul class="inventario-lista" id="inventario-lista">
+            <li class="inventario-vazio">Sua jornada ainda nao comecou...</li>
+        </ul>
+    </aside>
+
+    <div class="progresso" id="progresso">
+        <div class="progresso-barra" id="progresso-barra"></div>
+        <span class="progresso-texto" id="progresso-texto">Capitulo 0 de 12</span>
+    </div>
+
+    <main class="palco">
+
+        <div class="passo cenario-capa" data-passo="0">
+            <div class="ornamento-capa">
+                <svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,10 L40,10 M60,10 L100,10" stroke="currentColor" stroke-width="0.5"/>
+                    <circle cx="50" cy="10" r="2" fill="currentColor"/>
+                    <circle cx="50" cy="10" r="5" fill="none" stroke="currentColor" stroke-width="0.3"/>
+                </svg>
+            </div>
+            <p class="kicker">Uma aventura interativa</p>
+            <h1 class="titulo-capa">Misterios<br><span>do Sertao</span></h1>
+            <p class="subtitulo-capa">Onde cada escolha esconde um destino, e alguns destinos so se revelam aos mais atentos.</p>
+            <button class="botao botao-iniciar botao-avancar" data-proximo="1">
+                <span>Iniciar Aventura</span>
+            </button>
+            <p class="dica-capa">Existe um final secreto. Sera que voce o encontra?</p>
+        </div>
+
+        <div class="passo cenario-sertao" data-passo="1">
+            <span class="numero-capitulo">Capitulo I</span>
+            <h2>O Chamado</h2>
+            <p>Voce encontra, no fundo de uma gaveta antiga, uma carta amarelada do seu bisavo <strong>Sebastiao</strong>. Nela, palavras gastas pelo tempo falam de um tesouro escondido em algum lugar do nordeste brasileiro e de um caminho que so os corajosos enxergam.</p>
+            <p class="narrador">Quem segue meus passos com atencao, encontra mais que ouro: encontra a historia da nossa familia.</p>
+            <div class="grupo-botoes">
+                <button class="botao botao-avancar" data-proximo="2">Aceitar o chamado</button>
+            </div>
+            <button class="botao-voltar" data-voltar="0">Voltar</button>
+        </div>
+
+        <div class="passo cenario-sertao" data-passo="2">
+            <span class="numero-capitulo">Capitulo II</span>
+            <h2>A Encruzilhada do Mapa</h2>
+            <p>Dois nomes estao marcados a carvao na carta. Cada um aponta para um lugar diferente. Para onde voce decide ir primeiro?</p>
+            <div class="grupo-botoes">
+                <button class="botao botao-avancar botao-escolha" data-proximo="3" data-escolha="pernambuco">
+                    <span class="botao-titulo">Pernambuco</span>
+                    <span class="botao-sub">Terra de Lampiao e do cangaco</span>
+                </button>
+                <button class="botao botao-avancar botao-escolha" data-proximo="3" data-escolha="bahia">
+                    <span class="botao-titulo">Bahia</span>
+                    <span class="botao-sub">Terra de Canudos e de sertao profundo</span>
+                </button>
+            </div>
+            <button class="botao-voltar" data-voltar="1">Voltar</button>
+        </div>
+
+        <div class="passo cenario-sertao" data-passo="3">
+            <span class="numero-capitulo">Capitulo III</span>
+            <h2>A Chegada</h2>
+            <p>Depois de muitas horas de estrada poeirenta, voce desembarca numa pequena cidade onde o tempo parece andar mais devagar. O sol de meio-dia derrete o horizonte e o vento traz o cheiro doce-amargo do mandacaru florido.</p>
+            <p>Uma crianca descalca aponta para a praca: <em>Tem alguem te esperando la, moco(a).</em></p>
+            <div class="grupo-botoes">
+                <button class="botao botao-avancar" data-proximo="4">Ir ate a praca</button>
+            </div>
+            <button class="botao-voltar" data-voltar="2">Voltar</button>
+        </div>
+
+        <div class="passo cenario-mata" data-passo="4">
+            <span class="numero-capitulo">Capitulo IV</span>
+            <h2>Dona Cleonice</h2>
+            <p>Sob a sombra de um pe de juazeiro, uma senhora de olhar firme te recebe como se ja te conhecesse. <em>To te esperando faz tempo. Quem procura o tesouro do velho Sebastiao precisa de duas coisas: coragem e atencao.</em></p>
+            <p class="narrador">Ela aponta para o horizonte verde. Va pela mata. Mas observe tudo, ate o que parece nao importar.</p>
+            <div class="grupo-botoes">
+                <button class="botao botao-avancar" data-proximo="5">Seguir o conselho</button>
+            </div>
+            <button class="botao-voltar" data-voltar="3">Voltar</button>
+        </div>
+
+        <div class="passo cenario-mata" data-passo="5">
+            <span class="numero-capitulo">Capitulo V</span>
+            <h2>A Trilha que se Divide</h2>
+            <p>Voce caminha por horas ate chegar a um ponto em que a mata se abre em dois caminhos: um estreito, escuro e silencioso; outro largo, batido por viajantes.</p>
+            <div class="grupo-botoes">
+                <button class="botao botao-avancar" data-proximo="6">
+                    <span class="botao-titulo">Mata fechada</span>
+                    <span class="botao-sub">Estreita, mas direta</span>
+                </button>
+                <button class="botao botao-avancar" data-proximo="6">
+                    <span class="botao-titulo">Trilha aberta</span>
+                    <span class="botao-sub">Mais longa, porem segura</span>
+                </button>
+            </div>
+            <button class="botao-voltar" data-voltar="4">Voltar</button>
+        </div>
+
+        <div class="passo cenario-mata" data-passo="6">
+            <span class="numero-capitulo">Capitulo VI</span>
+            <h2>Vestigios do Passado</h2>
+            <p>No meio do caminho, paredes de pedra cobertas por trepadeiras surgem do nada: sao as <strong>ruinas de uma antiga capela</strong>. Pode haver perigo la dentro, ou respostas.</p>
+            <div class="grupo-botoes">
+                <button class="botao botao-avancar botao-escolha" data-proximo="7" data-escolha="investigar-ruinas">
+                    <span class="botao-titulo">Investigar as ruinas</span>
+                    <span class="botao-sub">A curiosidade fala mais alto</span>
+                </button>
+                <button class="botao botao-avancar botao-escolha" data-proximo="7" data-escolha="voltar-vila">
+                    <span class="botao-titulo">Voltar para a vila</span>
+                    <span class="botao-sub">Melhor nao arriscar</span>
+                </button>
+            </div>
+            <button class="botao-voltar" data-voltar="5">Voltar</button>
+        </div>
+
+        <div class="passo cenario-mata" data-passo="7">
+            <span class="numero-capitulo">Capitulo VII</span>
+            <h2>O Fragmento</h2>
+            <p>Entre raizes e pedras, brilha um pedaco de papel envelhecido, dobrado com cuidado: e um <strong>fragmento de mapa</strong>. As marcacoes apontam para uma caverna escondida atras de uma cachoeira.</p>
+            <div class="grupo-botoes">
+                <button class="botao botao-avancar" data-proximo="8">Seguir o mapa</button>
+            </div>
+            <button class="botao-voltar" data-voltar="6">Voltar</button>
+        </div>
+
+        <div class="passo cenario-caverna" data-passo="8">
+            <span class="numero-capitulo">Capitulo VIII</span>
+            <h2>A Caverna Esquecida</h2>
+            <p>A entrada se abre como uma boca escura na pedra. Um vento gelado sopra de dentro, e suas estalactites brilham fracamente com a luz da sua lanterna. Algo no ar parece sussurrar que voce esta perto.</p>
+            <div class="grupo-botoes">
+                <button class="botao botao-avancar" data-proximo="9">Entrar pela passagem principal</button>
+                <button class="botao botao-avancar botao-secreto escondido" data-proximo="12" id="botao-secreto">
+                    <span class="botao-titulo">Passagem oculta</span>
+                    <span class="botao-sub">Apenas voce consegue ve-la</span>
+                </button>
+            </div>
+            <button class="botao-voltar" data-voltar="7">Voltar</button>
+        </div>
+
+        <div class="passo cenario-caverna" data-passo="9">
+            <span class="numero-capitulo">Capitulo IX</span>
+            <h2>No Coracao da Pedra</h2>
+            <p>Voce caminha por corredores estreitos. O som dos seus proprios passos ecoa como tambor. Ao fundo, um salao se ilumina com feixes de sol que entram por frestas do teto.</p>
+            <div class="grupo-botoes">
+                <button class="botao botao-avancar" data-proximo="10">Avancar ate o salao</button>
+            </div>
+            <button class="botao-voltar" data-voltar="8">Voltar</button>
+        </div>
+
+        <div class="passo cenario-caverna" data-passo="10">
+            <span class="numero-capitulo">Capitulo X</span>
+            <h2>O Enigma da Porta</h2>
+            <p>Diante de voce, uma porta de pedra com tres simbolos esculpidos: <strong>sol</strong>, <strong>lua</strong> e <strong>estrela</strong>. As palavras de Dona Cleonice ressoam na sua mente: observar tudo, ate o que parece nao importar. Voce escolhe a estrela.</p>
+            <div class="grupo-botoes">
+                <button class="botao botao-avancar" data-proximo="11">Pressionar a estrela</button>
+            </div>
+            <button class="botao-voltar" data-voltar="9">Voltar</button>
+        </div>
+
+        <div class="passo cenario-caverna" data-passo="11">
+            <span class="numero-capitulo">Capitulo XI</span>
+            <h2>O Pequeno Tesouro</h2>
+            <p>A porta range e revela um pequeno bau de madeira escura. Dentro dele, moedas antigas, um relicario de prata e uma carta dobrada com cuidado, assinada por Sebastiao, agradecendo pela coragem de chegar ate aqui.</p>
+            <div class="mensagem-final" id="mensagem-final-comum"></div>
+            <div class="grupo-botoes">
+                <button class="botao botao-avancar botao-reiniciar" data-proximo="0">Jogar novamente</button>
+            </div>
+            <button class="botao-voltar" data-voltar="10">Voltar</button>
+        </div>
+
+        <div class="passo cenario-secreto" data-passo="12">
+            <span class="numero-capitulo">Capitulo Oculto</span>
+            <h2>O Verdadeiro Tesouro</h2>
+            <p>A passagem oculta te leva por um corredor estreito ate um <strong>salao dourado</strong> que ninguem pisava ha seculos. A sua frente: uma coroa de ouro macico, joias raras, e um diario com a historia de geracoes inteiras da sua familia. Sebastiao deixou tudo isso esperando alguem com olhar atento o suficiente para encontrar.</p>
+            <div class="mensagem-final mensagem-secreta" id="mensagem-final-secreto"></div>
+            <div class="grupo-botoes">
+                <button class="botao botao-avancar botao-reiniciar" data-proximo="0">Jogar novamente</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
